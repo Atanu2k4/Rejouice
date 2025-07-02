@@ -1,0 +1,60 @@
+@font-face {
+  font-family: Suisse;
+  src: url(/assets/font/SuisseIntl-Regular.ttf);
+  /* src: url(/assets/font/SuisseIntl-Light.ttf); */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Suisse;
+}
+
+.page1 {
+  height: 100vh;
+  width: 100%;
+  background: #5f5f5f;
+  position: relative;
+}
+
+.page1 video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+}
+
+.page1-content {
+  height: 100%;
+  width: 100%;
+  background: #00000086;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+nav h3,
+h4 {
+  font-size: 1.4rem;
+}
+
+.page1-content h1 {
+  font-size: 27rem;
+}
+
+.page1-content h1 span {
+  font-size: 27rem;
+}
