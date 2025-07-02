@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rejouice</title>
+    <title>Home | Rejouice®</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
       <div class="page1">
+        <div class="cursor">
+          <h5>Play Reel</h5>
+        </div>
         <video autoplay muted loop src="assets/reel-short.mp4"></video>
         <div class="page1-content">
           <nav>
@@ -21,7 +25,29 @@
           </h1>
         </div>
       </div>
+      <div class="page2">
+        <div class="page2-header">
+          <div class="page2-header-left">
+            <div>Full-service creative agency.<br />Two engagement models.</div>
+          </div>
+          <div class="page2-header-right">
+            <div>Paris &amp; San Diego</div>
+          </div>
+        </div>
+        <hr />
+        <div class="page2-main">
+          <h2>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are a digital brand accelerator. We design and develop
+            market-defining brands through award-winning deliverables. Choose
+            full cash compensation or offset up to 50% of our cash compensation
+            for equity in your company. Your vision, your decision.
+          </h2>
+        </div>
+      </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

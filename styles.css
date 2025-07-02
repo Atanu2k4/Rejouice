@@ -1,7 +1,10 @@
 @font-face {
   font-family: Suisse;
   src: url(/assets/font/SuisseIntl-Regular.ttf);
-  /* src: url(/assets/font/SuisseIntl-Light.ttf); */
+}
+@font-face {
+  font-family: Suisse-light;
+  src: url(/assets/font/SuisseIntl-Light.ttf);
 }
 
 * {
@@ -18,6 +21,24 @@
   position: relative;
 }
 
+.page1 .cursor {
+  height: 150px;
+  width: 150px;
+  background: #ff5f38;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  /* transition: 0.4s linear; */
+}
+
+.page1 .cursor h5 {
+  font-size: 1rem;
+}
+
 .page1 video {
   height: 100%;
   width: 100%;
@@ -29,13 +50,14 @@
 .page1-content {
   height: 100%;
   width: 100%;
-  background: #00000086;
+  /* background: #00000086; */
   position: relative;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  z-index: 12;
 }
 
 nav {
@@ -57,4 +79,51 @@ h4 {
 
 .page1-content h1 span {
   font-size: 27rem;
+}
+
+.page2 {
+  position: relative;
+  height: 100vh;
+  background: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3vw;
+}
+
+.page2-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2vh;
+}
+
+.page2-header-left {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.page2-header-right {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.page2 hr {
+  border: none;
+  border-top: 1px solid #444;
+}
+
+.page2-main {
+  margin-top: 1vh;
+  overflow: hidden;
+}
+
+.page2-main h2 {
+  font-family: Suisse-light;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #000;
 }
