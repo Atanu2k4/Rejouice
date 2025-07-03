@@ -14,6 +14,10 @@
   font-family: Suisse;
 }
 
+body {
+  background: #fff;
+}
+
 .page1 {
   height: 100vh;
   width: 100%;
@@ -84,7 +88,6 @@ h4 {
 .page2 {
   position: relative;
   height: 100vh;
-  background: #fff;
   color: #000;
   display: flex;
   flex-direction: column;
@@ -126,4 +129,137 @@ h4 {
   font-weight: 400;
   line-height: 1.1;
   color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* overflow: hidden; */
+}
+
+.page2-main h2 div{
+  display: flex;
+}
+
+.page2-main h2 div:first-child{
+  margin-left: 10rem;
+}
+
+.page2-main div{
+  margin-top: 1%;
+  /* background: red; */
+  overflow: hidden;
+}
+
+.page3 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 2.4rem;
+}
+
+.page3-top {
+  /* background-color: #ff5f38; */
+  text-align: center;
+}
+
+.page3-top h4 {
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page3-top h4 span {
+  font-size: 0.6rem;
+  padding: 0.2rem 0.4rem;
+  margin-left: 0.5rem;
+  color: white;
+  background: #000;
+  border-radius: 2rem;
+}
+
+.page3-top h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.page3-elements {
+  height: 75vh;
+  width: 100%;
+  margin-top: 10rem;
+  /* background-color: #000; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page3-elements .box {
+  position: relative;
+  height: 100%;
+  width: 32.5%;
+  /* background-color: #299967; */
+}
+
+.page3-elements .box video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page3-elements .box img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.7s linear;
+}
+
+.page3-elements .box img:hover {
+  opacity: 0;
+}
+
+.page4 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.page4 .new-cursor{
+  height: 150px;
+  width: 150px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+}
+
+.page4 .new-cursor h5{
+  color: white;
+}
+
+.page4 video{
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.page4 svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 65%;
 }

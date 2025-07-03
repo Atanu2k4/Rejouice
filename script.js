@@ -47,8 +47,8 @@ function cursorEffect() {
 
   pageContent.addEventListener("mousemove", (posi) => {
     gsap.to(cursor, {
-      x: posi.pageX,
-      y: posi.pageY,
+      x: posi.x,
+      y: posi.y,
     });
   });
 
@@ -70,9 +70,8 @@ function cursorEffect() {
 cursorEffect();
 
 function page2Animation() {
-  gsap.from(".page2-main h2", {
+  gsap.from(".page2-main h2 div span", {
     y: 120,
-    stagger: 0.2,
     scrollTrigger: {
       trigger: ".page2",
       scroller: ".container",
@@ -85,3 +84,33 @@ function page2Animation() {
 }
 
 page2Animation();
+
+function page4cursorEffect() {
+  const pageContent = document.querySelector(".page4");
+  const cursor = document.querySelector(".new-cursor");
+
+  pageContent.addEventListener("mousemove", (posi) => {
+    console.log(posi);
+
+    gsap.to(cursor, {
+      x: posi.x,
+      y: posi.y,
+    });
+  });
+
+  pageContent.addEventListener("mouseenter", () => {
+    gsap.to(cursor, {
+      scale: 1,
+      opacity: 1,
+    });
+  });
+
+  pageContent.addEventListener("mouseleave", () => {
+    gsap.to(cursor, {
+      scale: 0,
+      opacity: 0,
+    });
+  });
+}
+
+page4cursorEffect();
