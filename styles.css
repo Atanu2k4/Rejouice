@@ -1,4 +1,8 @@
 @font-face {
+  font-family: rejouice;
+  src: url(/assets/font/Rejouice-Headline.ttf);
+}
+@font-face {
   font-family: Suisse;
   src: url(/assets/font/SuisseIntl-Regular.ttf);
 }
@@ -6,12 +10,11 @@
   font-family: Suisse-light;
   src: url(/assets/font/SuisseIntl-Light.ttf);
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Suisse;
+
 }
 
 body {
@@ -79,11 +82,14 @@ h4 {
 
 .page1-content h1 {
   font-size: 27rem;
+  font-family: rejouice;
 }
 
 .page1-content h1 span {
   display: inline-block;
   font-size: 27rem;
+  font-weight: 100;
+  font-family: rejouice;
 }
 
 .page2 {
