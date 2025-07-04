@@ -114,3 +114,52 @@ function page4cursorEffect() {
 }
 
 page4cursorEffect();
+
+function swiPer() {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  });
+}
+
+swiPer();
+
+function loaderAnimation() {
+  let t = gsap.timeline();
+  t.from(".loader h3", {
+    x: 40,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.1,
+  });
+
+  t.to(".loader h3", {
+    x: -20,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.1,
+  });
+
+  t.to(".loader", {
+    opacity: 0,
+  });
+
+  t.from(".page1-content h1 span", {
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.1,
+    delay: -0.5,
+  });
+
+  t.to(".loader", {
+    display: "none",
+  });
+}
+
+loaderAnimation();
